@@ -1,0 +1,13 @@
+<h1>All our Flats</h1>
+
+  <% @flats.each do |flat| %>
+    <div class=container>
+        <p><%= flat.name %></p>
+        <p><%= flat.address %></p>
+        <p><%= flat.price_per_night %></p>
+        <p><%= flat.number_of_guests %></p>
+      <% end %>
+    </div>
+
+  <%= link_to "Add flat", new_flat_path %>
+
